@@ -44,7 +44,7 @@ CourseSeckill/
 - **GORM ORM**
 
 ## 项目架构
-![项目架构](./docs/seckill-architecture.jpg)
+![项目架构](./doc/seckill-architecture.jpeg)
 
 ## 压测结果
 

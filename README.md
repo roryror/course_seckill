@@ -4,17 +4,17 @@
 Course Seckill 是一个模拟课程秒杀系统的项目，使用 Go 语言开发，结合了 Kafka、Redis 和 MySQL 等技术栈。该系统旨在处理高并发的秒杀请求，确保数据的一致性和高效的处理能力。
 
 ## 项目结构
-CourseSeckill/
-│── main.go           # 项目的入口文件，初始化数据库、Redis 和 Kafka，并启动服务器
-│── internal/         # 包含项目的核心逻辑和功能模块
-│   ├── kafka.go      # Kafka 的初始化和消息处理逻辑
-│   ├── config.go     # 项目的配置文件，定义了 Kafka、Redis、MySQL 和服务器的配置
-│   ├── server.go     # 使用 Gin 框架实现的 HTTP 服务器，提供 API 接口
-│   ├── redis.go      # Redis 的初始化和缓存逻辑
-│   ├── mysql.go      # MySQL 数据库的初始化和操作逻辑
-│── deploy/           # 包含 Docker Compose 文件，用于启动 MySQL、Redis、Zookeeper 和 Kafka 服务
-│── web/              # 前端页面，展示课程列表和订单状态
-│── test/             # 包含性能测试脚本
+CourseSeckill/<br>
+│── main.go           # 项目的入口文件，初始化数据库、Redis 和 Kafka，并启动服务器<br>
+│── internal/         # 包含项目的核心逻辑和功能模块<br>
+│   ├── kafka.go      # Kafka 的初始化和消息处理逻辑<br>
+│   ├── config.go     # 项目的配置文件，定义了 Kafka、Redis、MySQL 和服务器的配置<br>
+│   ├── server.go     # 使用 Gin 框架实现的 HTTP 服务器，提供 API 接口<br>
+│   ├── redis.go      # Redis 的初始化和缓存逻辑<br>
+│   ├── mysql.go      # MySQL 数据库的初始化和操作逻辑<br>
+│── deploy/           # 包含 Docker Compose 文件，用于启动 MySQL、Redis、Zookeeper 和 Kafka 服务<br>
+│── web/              # 前端页面，展示课程列表和订单状态<br>
+│── test/             # 包含性能测试脚本<br>
 
 ## 主要功能
 - **课程秒杀**：用户可以通过 API 接口进行课程秒杀操作，系统会处理并发请求并更新库存。

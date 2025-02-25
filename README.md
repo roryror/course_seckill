@@ -91,9 +91,4 @@ Percentage of the requests served within a certain time (ms)
   98%     18
   99%     45
  100%     53 (longest request)
-
- test done
 ```
-
-## 测试结论
-# course_seckill

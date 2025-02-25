@@ -156,11 +156,6 @@
                 .map(([cid, _]) => cid)
                 .join(":");
 
-            if (!racingOrders) {
-                polling = false;
-                return;
-            }
-
             let pollCount = 0;
             const poll = () => {
                 if (!polling || pollCount >= MAX_POLL_COUNT) {
@@ -206,7 +201,10 @@
                         setTimeout(poll, POLL_INTERVAL);
                     });
             };
-
+            if (!racingOrders) {
+                polling = false;
+                return;
+            }
             poll();  
         }
     </script>
